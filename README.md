@@ -9,9 +9,9 @@ The blink effect is realized using JavaScript and [jQuery](http://jquery.com/).
 <br>
 
 ----
-## Preview of web content
+## Direct view
 
-The web content in this repository can be previewed at [this URL](https://mdecker-mobilecomputing.github.io/MDecker-MobileComputing/index.html).
+The HTML file with the blinker effekt in this repository can be viewed at [this URL](https://mdecker-mobilecomputing.github.io/HTML_BlinkEffekt/index.html).
 
 <br>
 
