@@ -1,5 +1,6 @@
 /*jshint esversion: 6 */
 
+/* This file is licensed under the terms of the BSD 3-Clause License. */
 
 /**
  * Diese Funktion wird periodisch (alle 1,5 Sekunden) aufgerufen und invertiert
