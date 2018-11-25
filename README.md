@@ -5,6 +5,8 @@ This repository demonstrates how the *Generic Data Attribute*
 In the HTML file some tags have the attribute `data-mide-effekt="blinker"`.
 These tags will "blink" (periodic switching on and off of yellow background color).
 The blink effect is realized using JavaScript and [jQuery](http://jquery.com/).
+*Generic data attributes* like this are heavily used by the front-end framework 
+[jQuery Mobile (jQM)](http://jquerymobile.com/).
 
 <br>
 
