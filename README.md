@@ -1,4 +1,6 @@
-# Blinker-Effekt mit generischem Data-Attribut in HTML
+# Blinker-Effekt mit generischem Data-Attribut in HTML #
+
+<br>
 
 This repository demonstrates how the *Generic Data Attribute*
 (`data-*`) can be used in HTML files in conjunction with JavaScript.
@@ -11,14 +13,21 @@ The blink effect is realized using JavaScript and [jQuery](http://jquery.com/).
 <br>
 
 ----
-## Direct view
+
+## Direct view ##
+
+<br>
 
 The HTML file with the blink effekt in this repository can be viewed at [this URL](https://mdecker-mobilecomputing.github.io/HTML_BlinkEffekt/index.html).
 
 <br>
 
 ----
-## License
 
-See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License)
-for the files in this repository.
+## License ##
+
+<br>
+
+See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License) for the files in this repository.
+
+<br>
