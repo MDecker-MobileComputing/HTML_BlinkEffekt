@@ -1,10 +1,10 @@
 "use strict";
 
-/**
- * Alle mit Custom-Data-Attribut "data-mide-effekt='blinker'" versehenen
- * HTML-Elemente.
- */
-let blinkElemente = null;
+/** Array aller Elemente, die schnell blinken sollen. */
+let blinkElementeSchnell = null;
+
+/** Array aller Elemente, die langsam blinken sollen. */
+let blinkElementeLangsam = null;
 
 
 /*
@@ -12,23 +12,35 @@ let blinkElemente = null;
  */
 window.addEventListener("load", function() {
 
-    blinkElemente = document.querySelectorAll( "[data-mide-effekt='blinker']" );
+    blinkElementeSchnell = document.querySelectorAll( "[data-mide-blinken='schnell']" );
+    console.log( `Anzahl der Elemente mit schnellem Blink-Effekt: ${blinkElementeSchnell.length}` );
 
-    blinken();
-    setInterval( blinken, 800 );
+    blinkElementeLangsam = document.querySelectorAll( "[data-mide-blinken='langsam']" );
+    console.log( `Anzahl der Elemente mit langsamen Blink-Effekt: ${blinkElementeLangsam.length}` );
 
-    console.log( `Anzahl der Elemente mit Blink-Effekt: ${blinkElemente.length}` );
+    setInterval( blinkenSchnell,  800 );
+    setInterval( blinkenLangsam, 1500 );
 });
 
 
 /**
- * Diese Funktion wird periodisch (alle 1,5 Sekunden) aufgerufen und invertiert
- * die Zuweisung der CSS-Klasse "hintergrundFuerEffekt" der mit dem Attribut
- * data-mide-effekt="blinker" versehenen HTML-Elemente.
+ * Diese Funktion lässt alle Elemente aus dem Array `blinkElementeSchnell` schnell blinken.
  */
-function blinken() {
+function blinkenSchnell() {
 
-    blinkElemente.forEach(function(element) {
+    blinkElementeSchnell.forEach( function(element) {
+
+        element.classList.toggle( "hintergrundFuerEffekt" );
+    });
+}
+
+
+/**
+ * Diese Funktion lässt alle Elemente aus dem Array `blinkElementeLangsam` langsam blinken.
+ */
+function blinkenLangsam() {
+
+    blinkElementeLangsam.forEach( function(element) {
 
         element.classList.toggle( "hintergrundFuerEffekt" );
     });
