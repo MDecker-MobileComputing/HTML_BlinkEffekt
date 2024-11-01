@@ -1,18 +1,21 @@
 /* This file is licensed under the terms of the BSD 3-Clause License. */
 
 body {
+
     font-family: Arial;
 }
 
 h2 {
+
     margin-top: 1.5em;
 }
 
 
 /*
  * CSS-Klasse, die allen mit dem Attribut data-mide-effekt="blinker"
- * versehenen Elementen zur Laufzeit mit jQuery zugewiesen wird.
+ * versehenen Elementen periodisch zugewiesen wird.
  */
 .hintergrundFuerEffekt {
+
     background: #FF0; /* gelb: Abkürzung für #FFFF00 */
 }
