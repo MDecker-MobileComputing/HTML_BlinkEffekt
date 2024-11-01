@@ -1,17 +1,26 @@
-/*jshint esversion: 6 */
+"use strict";
 
-/* This file is licensed under the terms of the BSD 3-Clause License. */
+/*
+ *
+ */
+window.addEventListener("load", function() {
+
+    blinken();
+    setInterval(blinken, 1000);
+});
+
 
 /**
  * Diese Funktion wird periodisch (alle 1,5 Sekunden) aufgerufen und invertiert
- * die Zuweisung der CSS-Klasse "hintergrundFuerEffekt" der mit dem Attribut 
+ * die Zuweisung der CSS-Klasse "hintergrundFuerEffekt" der mit dem Attribut
  * data-mide-effekt="blinker" versehenen HTML-Elemente.
  */
-function blinken() {  "use strict";
-    $("[data-mide-effekt='blinker']").toggleClass( "hintergrundFuerEffekt" );
+function blinken() {
+
+    const blinkElemente = document.querySelectorAll("[data-mide-effekt='blinker']");
+
+    blinkElemente.forEach(function(element) {
+
+        element.classList.toggle( "hintergrundFuerEffekt" );
+    });
 }
-
-
-$( document ).ready( function(){ blinken();                         
-                                 setInterval(blinken , 1500); 
-                               });
