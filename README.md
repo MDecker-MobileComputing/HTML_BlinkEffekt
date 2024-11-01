@@ -2,7 +2,8 @@
 
 <br>
 
-Dieses Repository demonstriert, wie das *Generic Data Attribute* (`data-*`) in HTML-Dateien in Verbindung mit JavaScript verwendet werden kann. In der HTML-Datei haben einige Tags das Attribut `data-mide-effekt="blinker"`. Diese Tags werden "blinken" (periodisches Ein- und Ausschalten der gelben Hintergrundfarbe).
+Dieses Repository demonstriert, wie das *Generic Data Attribute* (`data-*`) in HTML-Dateien in Verbindung mit JavaScript verwendet werden kann. In der HTML-Datei haben einige Tags das Attribut `data-mide-blinken` mit den werten "schnell" oder "langsam"
+Diese Tags "blinken" (periodisches Ein- und Ausschalten der gelben Hintergrundfarbe) in schneller oder langsamer Frequenz.
 
 <br>
 
