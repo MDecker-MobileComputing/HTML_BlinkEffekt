@@ -1,5 +1,6 @@
 "use strict";
 
+
 /** Array aller Elemente, die schnell blinken sollen. */
 let blinkElementeSchnell = null;
 
