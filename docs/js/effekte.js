@@ -1,12 +1,23 @@
 "use strict";
 
+/**
+ * Alle mit Custom-Data-Attribut "data-mide-effekt='blinker'" versehenen
+ * HTML-Elemente.
+ */
+let blinkElemente = null;
+
+
 /*
- *
+ * Diese Funktion wird aufgerufen, wenn das HTML-Dokument vollständig geladen wurde.
  */
 window.addEventListener("load", function() {
 
+    blinkElemente = document.querySelectorAll( "[data-mide-effekt='blinker']" );
+
     blinken();
-    setInterval(blinken, 1000);
+    setInterval( blinken, 800 );
+
+    console.log( `Anzahl der Elemente mit Blink-Effekt: ${blinkElemente.length}` );
 });
 
 
@@ -16,8 +27,6 @@ window.addEventListener("load", function() {
  * data-mide-effekt="blinker" versehenen HTML-Elemente.
  */
 function blinken() {
-
-    const blinkElemente = document.querySelectorAll("[data-mide-effekt='blinker']");
 
     blinkElemente.forEach(function(element) {
 

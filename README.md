@@ -2,23 +2,18 @@
 
 <br>
 
-This repository demonstrates how the *Generic Data Attribute*
-(`data-*`) can be used in HTML files in conjunction with JavaScript.
-In the HTML file some tags have the attribute `data-mide-effekt="blinker"`.
-These tags will "blink" (periodic switching on and off of yellow background color).
-The blink effect is realized using JavaScript and [jQuery](http://jquery.com/).
-*Generic data attributes* like this are heavily used by the front-end framework 
-[jQuery Mobile (jQM)](http://jquerymobile.com/).
+Dieses Repository demonstriert, wie das *Generic Data Attribute* (`data-*`) in HTML-Dateien in Verbindung mit JavaScript verwendet werden kann. In der HTML-Datei haben einige Tags das Attribut `data-mide-effekt="blinker"`. Diese Tags werden "blinken" (periodisches Ein- und Ausschalten der gelben Hintergrundfarbe).
 
 <br>
 
 ----
 
-## Direct view ##
+## Direkter Zugriff ##
 
 <br>
 
-The HTML file with the blink effekt in this repository can be viewed at [this URL](https://mdecker-mobilecomputing.github.io/HTML_BlinkEffekt/index.html).
+Die Beispieldatei kann [hier](https://mdecker-mobilecomputing.github.io/HTML_BlinkEffekt/index.html)
+direkt im Browser angezeigt werden.
 
 <br>
 
